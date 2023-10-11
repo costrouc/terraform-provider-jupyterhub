@@ -12,3 +12,12 @@ provider "jupyterhub" {
   prefix = "/"
   token = " b3a2d0844af3413f972dceb46d7a33f7 "
 }
+
+data "jupyterhub_user" "username" {
+  name = "username"
+}
+
+output "roles" {
+  description = "List of roles"
+  value = data.jupyterhub_user.username.roles
+}

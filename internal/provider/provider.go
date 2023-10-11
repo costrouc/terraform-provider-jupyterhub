@@ -239,7 +239,9 @@ func (p *JupyterHubProvider) Resources(ctx context.Context) []func() resource.Re
 }
 
 func (p *JupyterHubProvider) DataSources(ctx context.Context) []func() datasource.DataSource {
-	return []func() datasource.DataSource{}
+	return []func() datasource.DataSource{
+		NewUserDataSource,
+	}
 }
 
 func New(version string) func() provider.Provider {
