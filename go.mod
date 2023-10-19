@@ -3,11 +3,10 @@ module github.com/costrouc/terraform-provider-jupyterhub
 go 1.21.1
 
 require (
-	github.com/costrouc/go-jupyterhub-api v0.2.0
+	github.com/costrouc/go-jupyterhub-api v0.2.2
 	github.com/hashicorp/terraform-plugin-docs v0.16.0
 	github.com/hashicorp/terraform-plugin-framework v1.4.1
 	github.com/hashicorp/terraform-plugin-log v0.9.0
-	github.com/hashicorp/terraform-provider-scaffolding-framework v0.0.0-20231010111511-ed9d9971b364
 )
 
 require (
